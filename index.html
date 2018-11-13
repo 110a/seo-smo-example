@@ -5,11 +5,14 @@
   <head>
     <meta charset="utf-8">
     <title>{{$title}}</title>
+
+<link rel="canonical" href="{{$canonical_URL}}">
+<link rel="alternate" hreflang="fr" href=”{{$alternate_URL}}” />
+<link rel="alternate" hreflang="ja" href=”{{$alternate_URL}}” />
+
 <!-- seo for search engines -->
 <meta name="description" content="$descritpion"/>
 <meta name="google" content="notranslate">
-<link rel="alternate" hreflang="fr" href=”{{$alternate_URL}}” />
-<link rel="alternate" hreflang="ja" href=”{{$alternate_URL}}” />
 
 <!-- for facebook share -->
 <meta property="fb:app_id" content="302184056577324" />
@@ -21,14 +24,18 @@
 <meta property="og:locale:alternate" content="ja_JP" />
 <meta property="og:title" content="{{$title}}" />
 <meta property="og:description" content="{{$descritpion}}" />
-<meta property="og:image" content="http://110.ge/ani/logo.png" />
+<meta property="og:image" content="{{$full_url_of_image}}" />
 
 <!-- for twiiter share -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@opizari" />
 <meta name="twitter:creator" content="@opizari" />
 <meta name="twitter:url" content="{{$canonical_URL}}">
-<meta name="twitter:image" content="http://110.ge/ani/logo.png">
+<meta name="twitter:title" content="{{$title}}">
+<meta name="twitter:description" content="{{$descritpion}}">
+<meta name="twitter:image" content="{{$full_url_of_image}}">
+
+
 
 
   </head>
